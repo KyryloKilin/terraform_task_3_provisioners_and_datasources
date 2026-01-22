@@ -1,12 +1,7 @@
 variable "resource_group_name" {
   type        = string
-  description = "Resource Group created by my hands in Azure Portal"
+  description = "Resource Group created manually in Azure Portal"
   default     = "tfvmex-resources"
-}
-
-variable "location" {
-  type    = string
-  default = "uksouth"
 }
 
 variable "prefix" {
@@ -25,7 +20,8 @@ variable "admin_password" {
   description = "VM admin password (set via env var)"
 }
 
-variable "vm_size" {
-  type    = string
-  default = "Standard_DS1_v2"
+variable "local_default_page" {
+  type        = string
+  description = "Path to custom HTML page for Nginx"
+  default     = "./files/index.html"
 }
