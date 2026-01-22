@@ -23,5 +23,5 @@ variable "admin_password" {
 variable "local_default_page" {
   type        = string
   description = "Path to custom HTML page for Nginx"
-  default     = "./files/index.html"
+  default     = "./index.html"
 }

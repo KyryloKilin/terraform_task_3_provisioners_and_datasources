@@ -12,11 +12,11 @@ resource "null_resource" "nginx" {
   }
 
   connection {
-    type        = "ssh"
-    host        = local.host_ip
-    user        = var.admin_username
-    password    = var.admin_password
-    timeout     = "10m"
+    type     = "ssh"
+    host     = local.host_ip
+    user     = var.admin_username
+    password = var.admin_password
+    timeout  = "10m"
   }
 
   provisioner "remote-exec" {
